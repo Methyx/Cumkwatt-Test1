@@ -1,0 +1,19 @@
+.consumer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.consumer:nth-child(n) {
+  flex: 1;
+}
+
+.consumer-title {
+  color: indigo;
+}
+
+@media screen and (max-width: 700px) {
+  .consumer {
+    flex-wrap: wrap;
+  }
+}
