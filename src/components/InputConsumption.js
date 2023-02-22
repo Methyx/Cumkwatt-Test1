@@ -43,7 +43,10 @@ const InputConsumption = ({
           placeholder="%"
           value={rate}
           onChange={(event) => {
-            if (Number(event.target.value) <= 100) {
+            if (
+              Number(event.target.value) >= 0 &&
+              Number(event.target.value) <= 100
+            ) {
               setRate(event.target.value);
             }
           }}
